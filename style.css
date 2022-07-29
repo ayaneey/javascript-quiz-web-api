@@ -47,6 +47,10 @@ header {
   color: rgb(203, 120, 118);
 }
 
+#highscore {
+  text-align: left;
+}
+
 /* Welcome Page*/
 
 .welcome_page {
@@ -85,6 +89,11 @@ p {
   text-align: center;
 }
 
+.start h1,
+.start p {
+  text-align: center;
+}
+
 /* Question Section */
 
 #questions_container {
@@ -92,4 +101,138 @@ p {
   flex-direction: column;
   width: 50%;
   margin: auto;
+}
+
+#questions_container {
+  color: var(--persian-blue);
+  text-align: left;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container-questions {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.end h2,
+.end p {
+  text-align: left;
+}
+
+.end input {
+  outline: thick;
+  border-width: 1px;
+  padding: 5px;
+  width: 35%;
+  font-size: 2.2rem;
+  border-radius: 5px;
+}
+
+.end input:focus {
+  border: 2px solid var(--persian-blue);
+}
+
+/* Show and Hide containers */
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+/* Buttons */
+
+#back-btn {
+  background: #f28482ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+#score-check {
+  background: #f28482ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+#score-check:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+#clear-btn {
+  background: #f28482ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+#clear-btn:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+.submit {
+  background: #f28482ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+#start-game {
+  background: #f6bd60ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+#start-game:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
 }
