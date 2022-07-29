@@ -62,9 +62,10 @@ header {
 
 h1 {
   color: var(--trypan-blue);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  margin-right: 20%;
 }
 
 p {
@@ -74,7 +75,6 @@ p {
 
 #rules {
   font-weight: bold;
-  text-decoration: underline;
   color: rgb(105, 134, 127);
 }
 
@@ -137,15 +137,19 @@ p {
 
 /* Show and Hide containers */
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 .show {
   display: flex;
 }
 
 /* Buttons */
+
+.btn-box {
+  outline: none;
+}
 
 #back-btn {
   background: #f28482ff;
@@ -163,6 +167,16 @@ p {
   border-radius: 10px;
   box-shadow: 0 2px grey;
   cursor: pointer;
+}
+
+#back-btn:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+#back-btn:focus {
+  outline: none;
 }
 
 #score-check {
@@ -183,6 +197,16 @@ p {
   cursor: pointer;
 }
 
+#score-check:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+#score-check:focus {
+  outline: none;
+}
+
 #clear-btn {
   background: #f28482ff;
   color: white;
@@ -199,6 +223,16 @@ p {
   border-radius: 10px;
   box-shadow: 0 2px grey;
   cursor: pointer;
+}
+
+#clear-btn:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+#clear-btn:focus {
+  outline: none;
 }
 
 .submit {
@@ -219,6 +253,16 @@ p {
   cursor: pointer;
 }
 
+#submit-btn:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+#submit:focus {
+  outline: none;
+}
+
 #start-game {
   background: #f6bd60ff;
   color: white;
@@ -235,4 +279,51 @@ p {
   border-radius: 10px;
   box-shadow: 0 2px grey;
   cursor: pointer;
+}
+
+#start-game:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+#start-game:focus {
+  outline: none;
+}
+
+#startend {
+  margin-top: 10px;
+  width: 25%;
+}
+
+#answer_button {
+  width: 50%;
+  text-align: left;
+  font-size: 3vw;
+}
+
+/* Check Questions - correct or incorrect */
+
+#complete {
+  font-size: 25px;
+  text-align: center;
+  color: #560badff;
+  font-style: italic;
+  margin: 0 100px;
+}
+
+#correct {
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#incorrect {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
 }
