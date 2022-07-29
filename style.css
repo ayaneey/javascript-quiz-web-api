@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: "Georgia";
+  background: var(--baby-pink);
+}
+
+:root {
+  --maximum-yellow-red: #f6bd60ff;
+  --linen: #f7ede2ff;
+  --baby-pink: rgb(233, 209, 205);
+  --morning-blue: rgb(105, 134, 127);
+  --light-coral: #f28482ff;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  width: 85%;
+}
+
+.header {
+  padding-left: 15px;
+  font-size: 2rem;
+  display: inline;
+}
+
+.timer_check {
+  font-size: 2rem;
+  color: var(--morning-blue);
+}
+
+#highscore:hover {
+  cursor: pointer;
+  color: rgb(203, 120, 118);
+}
