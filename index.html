@@ -22,18 +22,21 @@
       <div>
       <!-- Welcome Page (including rules for Quiz) -->
         <section class="welcome_page" id="welcome">
-          <div id="Intro">
+          <div id="intro">
             <h1>Welcome! Hope you enjoy the quiz :)</h1>
-            <p id="Rules">Read below before starting:</p>
-            <li>You have 15 seconds to answer each question.</li>
-            <li>
+            <p id="rules">Read below before starting:</p>
+            <li class="list">You have 15 seconds to answer each question.</li>
+            <li class="list">
               If the timer runs out, then the questions will move onto the next.
             </li>
-            <li>
-              Remember, you are awarded points for each question. For every
-              question you get incorrectly, you will lose points and your time
+            <li class="list">
+              Remember, you are awarded points for each question. Get a question incorrect <br> and 
+              you will lose points and your time
               by 3 seconds!
             </li>
+            <br>
+            <br>
+            <button class="btn startend" id="start-game">Begin Quiz</button>
           </div>
         </section>
 
@@ -67,7 +70,7 @@
 
 
     <!-- Final Page -->
-    <section class="submit-page" id="end-container">
+    <section class="end-container" id="submit-page">
       <div>
         <h2 id="complete">All done!</h2>
         <p id="result-score">Your final score is:</p>

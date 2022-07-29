@@ -10,6 +10,16 @@
   --baby-pink: rgb(233, 209, 205);
   --morning-blue: rgb(105, 134, 127);
   --light-coral: #f28482ff;
+  --flickr-pink: #f72585ff;
+  --byzantine: #b5179eff;
+  --purple: #7209b7ff;
+  --purple-2: #560badff;
+  --trypan-blue: #480ca8ff;
+  --trypan-blue-2: #3a0ca3ff;
+  --persian-blue: #3f37c9ff;
+  --ultramarine-blue: #4361eeff;
+  --dodger-blue: #4895efff;
+  --vivid-sky-blue: #4cc9f0ff;
 }
 
 /* Header */
@@ -35,4 +45,51 @@ header {
 #highscore:hover {
   cursor: pointer;
   color: rgb(203, 120, 118);
+}
+
+/* Welcome Page*/
+
+.welcome_page {
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  color: var(--trypan-blue);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+#rules {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(105, 134, 127);
+}
+
+.list {
+  font-size: 15px;
+  list-style: square;
+  padding-left: 1em;
+}
+
+.start {
+  align-items: center;
+  text-align: center;
+}
+
+/* Question Section */
+
+#questions_container {
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
