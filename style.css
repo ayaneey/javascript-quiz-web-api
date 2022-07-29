@@ -61,7 +61,7 @@ header {
 }
 
 h1 {
-  color: var(--trypan-blue);
+  color: var(--byzantine);
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -137,12 +137,26 @@ p {
 
 /* Show and Hide containers */
 
-/* .hide {
+.hide {
   display: none;
-} */
+}
 
 .show {
   display: flex;
+}
+
+/* High Score */
+
+ol {
+  list-style-type: circle;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(149, 185, 176);
+}
+
+li {
+  font-size: 4vw;
 }
 
 /* Buttons */
