@@ -98,6 +98,7 @@ function replaceQuestionDiv() {
   containerQuestionEl.setAttribute("class", "show");
 }
 
+// function to populate quiz
 function populateQuizDetails() {
   let currentQuestion = questions[questionNumber - 1];
   questionEl.innerHTML = currentQuestion.question;
