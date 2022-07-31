@@ -95,17 +95,17 @@ p {
 
 /* Question Section */
 
-#questions_container {
+/* #questions_container {
   padding: 20px;
   flex-direction: column;
   width: 50%;
   margin: auto;
-}
+} */
 
 #questions_container {
   color: var(--persian-blue);
   text-align: left;
-  font-size: 3rem;
+  font-size: 1rem !important;
   font-weight: bold;
 }
 

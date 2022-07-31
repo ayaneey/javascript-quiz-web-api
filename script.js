@@ -1,28 +1,34 @@
-// Defining Variables
-var containerQuestionEl = document.getElementById("question_container");
+// // Defining Variables
+var containerQuestionEl = document.getElementById("questions_container");
 var containerWelcomeEl = document.getElementById("welcome_page");
 var containerEndEl = document.getElementById("end-container");
 var containerScoreEl = document.getElementById("score-complete");
 var formInitials = document.getElementById("initials-form");
-var containerHighScoreEl = document.getElementById("highscore");
+var containerHighScoresEl = document.getElementById("highscore");
 var containerCheckScoreEl = document.getElementById("score_check");
 var correctEl = document.getElementById("correct");
 var incorrectEl = document.getElementById("incorrect");
 
-// question, answer and timer elements
+// // question, answer and timer elements
 var timerEl = document.querySelector("#timer");
 var questionEl = document.getElementById("question");
-var answerEl = document.getElementById("answer");
+var optionEl = document.getElementById("options");
+// var answerEl = document.getElementById("answer");
 var timeleft;
 var score = 0;
 var gameover;
 timerEl.innerText = 0;
 
-// Highscore array
+// // High-score array
 
 var HighScores = [];
 var QuestionIndex = 0;
 var arrayShuffledQuestions;
+
+// // buttons
+var btnStartEl = document.querySelector("#start-game");
+var btnClearScoresEl = document.querySelector("#clear-btn");
+var btnGoBackEl = document.querySelector("#back-btn");
 
 // Questions array
 
@@ -86,3 +92,44 @@ var questions = [
     ],
   },
 ];
+let questionNumber = 2;
+function replaceQuestionDiv() {
+  containerWelcomeEl.setAttribute("class", "hide");
+  containerQuestionEl.setAttribute("class", "show");
+}
+
+function populateQuizDetails() {
+  let currentQuestion = questions[questionNumber - 1];
+  questionEl.innerHTML = currentQuestion.question;
+  let choices = currentQuestion.choices;
+  let unorderedList = document.createElement("ul");
+  for (let i = 0; i < choices.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.setAttribute("data-answer", currentQuestion.answer);
+    listItem.addEventListener("click", function (event) {
+      console.log(event.target);
+
+      let correctAnswer = event.target.dataset.answer;
+      let text = event.target.innerHTML;
+      if (text === correctAnswer) {
+        correctEl.setAttribute("class", "show");
+        incorrectEl.setAttribute("class", "hide");
+      } else {
+        incorrectEl.setAttribute("class", "show");
+        correctEl.setAttribute("class", "hide");
+      }
+    });
+    listItem.innerHTML = choices[i].choice;
+    unorderedList.appendChild(listItem);
+  }
+  optionEl.appendChild(unorderedList);
+}
+
+function initializeQuiz() {
+  replaceQuestionDiv();
+  populateQuizDetails();
+}
+
+btnStartEl.addEventListener("click", function (event) {
+  initializeQuiz();
+});
