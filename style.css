@@ -42,14 +42,22 @@ header {
   color: var(--morning-blue);
 }
 
-#highscore:hover {
+#timer {
+  font-size: 2rem;
+}
+
+.timer-title {
+  font-size: 2rem;
+}
+
+/* #highscore:hover {
   cursor: pointer;
   color: rgb(203, 120, 118);
 }
 
 #highscore {
   text-align: left;
-}
+} */
 
 /* Welcome Page*/
 
@@ -62,6 +70,7 @@ header {
 
 h1 {
   color: var(--byzantine);
+  background-color: var(--baby-pink);
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -69,7 +78,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 17px;
 }
 
 #rules {
@@ -78,9 +87,10 @@ p {
 }
 
 .list {
-  font-size: 15px;
+  font-size: 17px;
   list-style: square;
   padding-left: 1em;
+  list-style-type: square;
 }
 
 .start {
@@ -105,15 +115,43 @@ p {
 #questions_container {
   color: var(--persian-blue);
   text-align: left;
-  font-size: 1rem !important;
+  font-size: 2rem !important;
   font-weight: bold;
 }
 
-.container-questions {
+#container-questions {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 40px 20px;
   margin: auto;
+}
+
+#options {
+  color: #3f37c9ff;
+}
+
+#next-question-button {
+  color: white;
+  background-color: #f28482ff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px;
+  box-shadow: 0 3px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+#next-question-button:hover {
+  background: var(--dodger-blue);
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+.next-question {
+  background: #560badff;
+  width: 100%;
 }
 
 .end h2,
@@ -151,11 +189,23 @@ ol {
 }
 
 li:nth-child(odd) {
-  background-color: rgb(149, 185, 176);
+  background-color: rgb(196, 218, 213);
+  border-color: black;
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+li:nth-child(even) {
+  background-color: rgb(229, 239, 185);
+  border-color: black;
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
 }
 
 li {
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 /* Buttons */

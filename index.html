@@ -10,10 +10,10 @@
     <header>
       <div class="header">
         <div class="score_check">
-          <button id="score-check">View HighScores</button>
+          <!-- <button id="score-check">View HighScores</button> -->
         </div>
         <div class="timer_check">
-          <p id="timer">Time Remaining:</p>
+          <p class="timer-title">Time Remaining: <span id="timer"></span></p>
         </div>
       </div>
     </header>
@@ -25,7 +25,7 @@
           <div id="intro">
             <h1>Welcome! Hope you enjoy the quiz :)</h1>
             <p id="rules">Read below before starting &#x1F4DD;:</p>
-            <li class="list">You have 15 seconds to answer each question.</li>
+            <li class="list">You have 60 seconds the whole quiz.</li>
             <br>
             <li class="list">
               If the timer runs out, then the questions will move onto the next.
@@ -33,7 +33,7 @@
             <br>
             <li class="list">
               Remember, you are awarded points for each question. Get a question incorrect <br> and 
-              you will lose points and your time
+              you will lose 2 points and your time
               by 3 seconds!
             </li>
             <br>
@@ -44,7 +44,7 @@
 
        <!-- Questions section -->
       <section class="hide" id="questions_container">
-     <div class="container-questions">
+     <div id="container-questions">
       <div id="question"></div>
       <div id="options"></div>
       <!-- <div id="answer_button" class="btn-box"></div> -->
@@ -58,16 +58,19 @@
     <div class="hide" id="incorrect">
     <h2>Incorrect &#128531</h2>
     </div>
+    <div id="next-question">
+      <button class="next_question_button hide" id="next-question-button">Next Question</button>
+    </div>
 
      <!-- High Score section -->
     <section class="hide" id="highscore">
-    <div>
+    <div id="final_output">
     <h2>High Scores</h2>
-    <div id="score_board"><p>Your record:</p></div>
+    <div><p<>Your record:<span id="score_board"></span></p></div>
     <ol id="list-high-score" class="list-score"></ol>
         <div>
       <button class="btn" id="back-btn">Return</button>
-      <button class="btn" id="clear-btn">Clear High Score</button>
+      <!-- <button class="btn" id="clear-btn">Clear High Score</button> -->
         </div>
     </div>
   </section>
@@ -79,7 +82,7 @@
         <h2 id="score-complete">All done!</h2>
         <!-- <p id="result-score">Your final score is:</p> -->
       </div>
-      <form id="initials-form" class="initials">
+      <form id="initials-form" class="show">
          <p>Type your Initials
           <input type="text" name="initials" id="initials" class="text-input"/>
           <button class="btn submit" id="submit-score" type="submit">Submit</button>
