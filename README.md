@@ -10,13 +10,12 @@ In this project, I created a quiz containing a series of questions where the use
 <br>
 
 
-# Javascript-Quiz-Web-Api
-##Technologies
+## Technologies
 - HTML
 - CSS
 - JavaScript
 
-##Github repository 
+## Github repository 
 
 Github username: ayaneey/javascript-quiz-web-api
 Github URL: https://github.com/ayaneey/javascript-quiz-web-api
