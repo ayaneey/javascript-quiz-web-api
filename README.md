@@ -9,12 +9,12 @@ In this project, I created a quiz containing a series of questions where the use
 ![Page 3](https://user-images.githubusercontent.com/108099259/182371567-7c83fa08-eeb5-4988-bfe6-4165103bcbae.png)
 <br>
 
-##Technologies
+#Technologies
 - HTML
 - CSS
 - JavaScript
 
-##Github repository 
+#Github repository 
 
 Github username: ayaneey/javascript-quiz-web-api
 Github URL: https://github.com/ayaneey/javascript-quiz-web-api
