@@ -6,7 +6,7 @@ In this project, I created a quiz containing a series of questions where the use
 <br>
 ![Page 2](https://user-images.githubusercontent.com/108099259/182370042-74df1ecd-237d-4ca5-90eb-2e66efc60367.png)
 <br>
-![Page 3](https://user-images.githubusercontent.com/108099259/182370723-7857133e-92f6-4b90-afda-2a7571246850.png)
+![Page 3](https://user-images.githubusercontent.com/108099259/182371567-7c83fa08-eeb5-4988-bfe6-4165103bcbae.png)
 <br>
 
 ##Technologies
